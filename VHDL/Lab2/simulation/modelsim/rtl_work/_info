@@ -1,0 +1,122 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\Slim\Documents\VHDL\Lab2\simulation\modelsim
+Pcpu_package
+Z1 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+Z2 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z3 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z4 w1506434948
+Z5 dC:\Users\Slim\Documents\VHDL\Lab2\simulation\modelsim
+Z6 8C:/Users/Slim/Documents/VHDL/Lab2/CPU_Package.vhd
+Z7 FC:/Users/Slim/Documents/VHDL/Lab2/CPU_Package.vhd
+l0
+L5
+V3W:XS<n11hgmz;T5;_Ujm1
+Z8 OV;C;10.1d;51
+31
+b1
+Z9 !s108 1507645596.606000
+Z10 !s90 -reportprogress|300|-93|-work|work|C:/Users/Slim/Documents/VHDL/Lab2/CPU_Package.vhd|
+Z11 !s107 C:/Users/Slim/Documents/VHDL/Lab2/CPU_Package.vhd|
+Z12 o-93 -work work -O0
+Z13 tExplicit 1
+!s100 <8LAP]Xzm@2P>jjQkz52H1
+!i10b 1
+Bbody
+Z14 DPx4 work 11 cpu_package 0 22 3W:XS<n11hgmz;T5;_Ujm1
+R1
+R2
+R3
+l0
+L23
+Vl7gf7zCXXGa:?HOIJgMiF3
+R8
+31
+R9
+R10
+R11
+R12
+R13
+nbody
+!s100 ejZS<HZoXBBnb<ogBVci23
+!i10b 1
+Eregisterfile_tb
+Z15 w1507121881
+R1
+R2
+R3
+R14
+R5
+Z16 8C:/Users/Slim/Documents/VHDL/Lab2/RegisterFile_tb.vhd
+Z17 FC:/Users/Slim/Documents/VHDL/Lab2/RegisterFile_tb.vhd
+l0
+L7
+V:NV9S8;RENf3^HOH_cA`n2
+!s100 4mR`80T94Hh`9NijU1zlb0
+R8
+31
+!i10b 1
+Z18 !s108 1507645596.923000
+Z19 !s90 -reportprogress|300|-93|-work|work|C:/Users/Slim/Documents/VHDL/Lab2/RegisterFile_tb.vhd|
+Z20 !s107 C:/Users/Slim/Documents/VHDL/Lab2/RegisterFile_tb.vhd|
+R12
+R13
+Abehavior
+R1
+R2
+R3
+R14
+DEx4 work 15 registerfile_tb 0 22 :NV9S8;RENf3^HOH_cA`n2
+l35
+L11
+V@D?DKg]QO`lAK^X;5_^]63
+!s100 9gCV@I3I::`BU0KzW0<[E2
+R8
+31
+!i10b 1
+R18
+R19
+R20
+R12
+R13
+Erw_memory
+Z21 w1507580563
+R14
+R1
+R2
+R3
+R5
+Z22 8C:/Users/Slim/Documents/VHDL/Lab2/RW_MEMORY.vhd
+Z23 FC:/Users/Slim/Documents/VHDL/Lab2/RW_MEMORY.vhd
+l0
+L7
+VbbK[GFPHMX;EWTgagG>D90
+R8
+31
+Z24 !s108 1507645596.807000
+Z25 !s90 -reportprogress|300|-93|-work|work|C:/Users/Slim/Documents/VHDL/Lab2/RW_MEMORY.vhd|
+Z26 !s107 C:/Users/Slim/Documents/VHDL/Lab2/RW_MEMORY.vhd|
+R12
+R13
+!s100 fb`RJFD`JAbR=aZJLg^D]1
+!i10b 1
+Abehaviour
+R14
+R1
+R2
+R3
+DEx4 work 9 rw_memory 0 22 bbK[GFPHMX;EWTgagG>D90
+l22
+L17
+V4CC0EU`7oF14n<1a45UgD1
+R8
+31
+R24
+R25
+R26
+R12
+R13
+!s100 Vm<P=4k1<S=FeB4cP>3N<0
+!i10b 1

@@ -1,0 +1,67 @@
+# Reading C:/altera/13.1/modelsim_ase/tcl/vsim/pref.tcl 
+# do Lab2_run_msim_rtl_vhdl.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying C:\altera\13.1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\13.1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vcom -93 -work work {C:/Users/Slim/Documents/VHDL/Lab2/CPU_Package.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling package CPU_Package
+# -- Compiling package body CPU_Package
+# -- Loading package CPU_Package
+# vcom -93 -work work {C:/Users/Slim/Documents/VHDL/Lab2/RW_MEMORY.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package CPU_Package
+# -- Compiling entity RW_MEMORY
+# -- Compiling architecture Behaviour of RW_MEMORY
+# 
+# vcom -93 -work work {C:/Users/Slim/Documents/VHDL/Lab2/RegisterFile_tb.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package CPU_Package
+# -- Compiling entity RegisterFile_tb
+# -- Compiling architecture behavior of RegisterFile_tb
+# 
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneive -L rtl_work -L work -voptargs="+acc"  RegisterFile_tb
+# vsim -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneive -L rtl_work -L work -voptargs=\"+acc\" -t 1ps RegisterFile_tb 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.cpu_package(body)
+# Loading work.registerfile_tb(behavior)
+# ** Warning: (vsim-3473) Component instance "DUT : RegisterFile" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /registerfile_tb File: C:/Users/Slim/Documents/VHDL/Lab2/RegisterFile_tb.vhd
+# 
+# add wave *
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: Slim  Hostname: SLIMCOMP  ProcessID: 7920
+# 
+#           Attempting to use alternate WLF file "./wlftad6qjq".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlftad6qjq
+# 
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run 100 ns

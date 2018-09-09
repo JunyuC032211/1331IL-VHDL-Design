@@ -1,0 +1,65 @@
+LIBRARY IEEE;
+USE IEEE.std_logic_1164.ALL;
+use ieee.numeric_std.all;
+
+library work;
+use work.CPU_Package.all;
+use work.all;
+
+Entity ALU_tb is
+end ALU_tb;
+
+
+Architecture behavioral of ALU_tb is
+	component ALU is 
+		PORT(
+		 Op    : IN std_logic_vector(2 downto 0);
+		 A     : IN data_word;
+		 B     : IN data_word;
+		 En    : IN std_logic;
+		 clk   : IN std_logic;
+		 y     : OUT data_word;
+		 n_flag: OUT std_logic;
+		 z_flag: OUT std_logic;
+		 o_flag: OUT std_logic
+		);
+	end component;
+	
+	
+begin 
+	
+DUT: ALU
+	port map (
+		Op => Op_in,
+		A => A_in,
+		B => B_in,
+		En => En_in,
+		clk => clk_in,
+		y => y_out,
+		n_flag => n,
+		z_flag => z,
+		o_flag => o
+	);
+	
+	process(clk_in)
+		begin
+			clk_in <= NOT clk_in;
+			wait for 2 ns;
+	end process;
+	
+	process
+	begin
+	
+	
+	end process;
+	
+	
+	
+end architecture;
+	
+	
+	
+	
+	
+	
+	

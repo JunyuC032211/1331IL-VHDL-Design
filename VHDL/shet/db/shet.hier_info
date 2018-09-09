@@ -1,0 +1,45 @@
+|Counter
+clk => ~NO_FANOUT~
+step => process_0.IN1
+step => prev_step.DATAIN
+counts[0] <= counts[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+counts[1] <= counts[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
+counts[2] <= counts[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
+counts[3] <= counts[3]$latch.DB_MAX_OUTPUT_PORT_TYPE
+counts[4] <= counts[4]$latch.DB_MAX_OUTPUT_PORT_TYPE
+counts[5] <= counts[5]$latch.DB_MAX_OUTPUT_PORT_TYPE
+counts[6] <= counts[6]$latch.DB_MAX_OUTPUT_PORT_TYPE
+counts[7] <= counts[7]$latch.DB_MAX_OUTPUT_PORT_TYPE
+counts[8] <= counts[8]$latch.DB_MAX_OUTPUT_PORT_TYPE
+counts[9] <= counts[9]$latch.DB_MAX_OUTPUT_PORT_TYPE
+counts[10] <= counts[10]$latch.DB_MAX_OUTPUT_PORT_TYPE
+counts[11] <= counts[11]$latch.DB_MAX_OUTPUT_PORT_TYPE
+counts[12] <= counts[12]$latch.DB_MAX_OUTPUT_PORT_TYPE
+counts[13] <= counts[13]$latch.DB_MAX_OUTPUT_PORT_TYPE
+counts[14] <= counts[14]$latch.DB_MAX_OUTPUT_PORT_TYPE
+counts[15] <= counts[15]$latch.DB_MAX_OUTPUT_PORT_TYPE
+counts[16] <= counts[16]$latch.DB_MAX_OUTPUT_PORT_TYPE
+counts[17] <= counts[17]$latch.DB_MAX_OUTPUT_PORT_TYPE
+counts[18] <= counts[18]$latch.DB_MAX_OUTPUT_PORT_TYPE
+counts[19] <= counts[19]$latch.DB_MAX_OUTPUT_PORT_TYPE
+counts[20] <= counts[20]$latch.DB_MAX_OUTPUT_PORT_TYPE
+counts[21] <= counts[21]$latch.DB_MAX_OUTPUT_PORT_TYPE
+counts[22] <= counts[22]$latch.DB_MAX_OUTPUT_PORT_TYPE
+counts[23] <= counts[23]$latch.DB_MAX_OUTPUT_PORT_TYPE
+counts[24] <= counts[24]$latch.DB_MAX_OUTPUT_PORT_TYPE
+counts[25] <= counts[25]$latch.DB_MAX_OUTPUT_PORT_TYPE
+counts[26] <= counts[26]$latch.DB_MAX_OUTPUT_PORT_TYPE
+counts[27] <= counts[27]$latch.DB_MAX_OUTPUT_PORT_TYPE
+counts[28] <= counts[28]$latch.DB_MAX_OUTPUT_PORT_TYPE
+counts[29] <= counts[29]$latch.DB_MAX_OUTPUT_PORT_TYPE
+counts[30] <= counts[30]$latch.DB_MAX_OUTPUT_PORT_TYPE
+counts[31] <= counts[31]$latch.DB_MAX_OUTPUT_PORT_TYPE
+hex[0] <> hex[0]
+hex[1] <> hex[1]
+hex[2] <> hex[2]
+hex[3] <> hex[3]
+hex[4] <> hex[4]
+hex[5] <> hex[5]
+hex[6] <> hex[6]
+
+

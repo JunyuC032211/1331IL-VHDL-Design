@@ -1,0 +1,16 @@
+ENTITY RegisterFile IS
+PORT( clk : IN std_logic;
+	 data_in : IN data_word;
+	 data_out_1 : OUT data_word;
+	 data_out_0 : OUT data_word;
+	 sel_in : IN std_logic_vector (1 downto 0);
+	 sel_out_1 : IN std_logic_vector (1 downto 0);
+	 sel_out_0 : IN std_logic_vector (1 downto 0);
+	 rw_reg : in std_logic);
+END ENTITY RegisterFile;
+
+ARCHITECTURE RTL OF RegisterFile IS 
+	
+
+
+End RTL;

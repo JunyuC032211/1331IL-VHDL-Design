@@ -1,0 +1,122 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\Slim\Documents\VHDL\Ny mapp\simulation\modelsim
+Econtroller
+Z1 w1507899703
+Z2 DPx4 work 11 cpu_package 0 22 Q5:m]Ra[ZeGj`eRh2^5T11
+Z3 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+Z4 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z5 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z6 dC:\Users\Slim\Documents\VHDL\Ny mapp\simulation\modelsim
+Z7 8C:/Users/Slim/Documents/VHDL/Ny mapp/Controller.vhd
+Z8 FC:/Users/Slim/Documents/VHDL/Ny mapp/Controller.vhd
+l0
+L7
+VBXF^eJP4?McloYOj`=c=b3
+Z9 OV;C;10.1d;51
+31
+Z10 !s108 1507899854.789000
+Z11 !s90 -reportprogress|300|-93|-work|work|C:/Users/Slim/Documents/VHDL/Ny mapp/Controller.vhd|
+Z12 !s107 C:/Users/Slim/Documents/VHDL/Ny mapp/Controller.vhd|
+Z13 o-93 -work work -O0
+Z14 tExplicit 1
+!s100 lJllzc7odK4U<GcMZ?knZ2
+!i10b 1
+Abehaviour
+R2
+R3
+R4
+R5
+DEx4 work 10 controller 0 22 BXF^eJP4?McloYOj`=c=b3
+l60
+L34
+Vd8m`47aMMUTV82f;S0=PT3
+R9
+31
+R10
+R11
+R12
+R13
+R14
+!s100 kJJ0^>P87AeR3MP923ZaK3
+!i10b 1
+Econtroller_tb
+Z15 w1507899463
+R2
+R3
+R4
+R5
+R6
+Z16 8C:/Users/Slim/Documents/VHDL/Ny mapp/Controller_tb.vhd
+Z17 FC:/Users/Slim/Documents/VHDL/Ny mapp/Controller_tb.vhd
+l0
+L6
+V=;nd`5QLcgF[J`:PhhT;C0
+!s100 zFTXFeRTbKehH3T7P8HGD0
+R9
+31
+!i10b 1
+Z18 !s108 1507899854.902000
+Z19 !s90 -reportprogress|300|-93|-work|work|C:/Users/Slim/Documents/VHDL/Ny mapp/Controller_tb.vhd|
+Z20 !s107 C:/Users/Slim/Documents/VHDL/Ny mapp/Controller_tb.vhd|
+R13
+R14
+Artl
+R2
+R3
+R4
+R5
+DEx4 work 13 controller_tb 0 22 =;nd`5QLcgF[J`:PhhT;C0
+l59
+L9
+VO2UO;A0aP[7ZE@<gQ7oNL1
+!s100 =dXa`R@i3h9az@CJ?OgRY1
+R9
+31
+!i10b 1
+R18
+R19
+R20
+R13
+R14
+Pcpu_package
+R3
+R4
+R5
+Z21 w1507636113
+R6
+Z22 8C:/Users/Slim/Documents/VHDL/Ny mapp/CPU_Package.vhd
+Z23 FC:/Users/Slim/Documents/VHDL/Ny mapp/CPU_Package.vhd
+l0
+L6
+VQ5:m]Ra[ZeGj`eRh2^5T11
+R9
+31
+b1
+Z24 !s108 1507899854.659000
+Z25 !s90 -reportprogress|300|-93|-work|work|C:/Users/Slim/Documents/VHDL/Ny mapp/CPU_Package.vhd|
+Z26 !s107 C:/Users/Slim/Documents/VHDL/Ny mapp/CPU_Package.vhd|
+R13
+R14
+!s100 dkZ5cO=V8CcMSP0kKX;8T2
+!i10b 1
+Bbody
+R2
+R3
+R4
+R5
+l0
+L26
+VJ=BdLlV>ea<PBV`^H9W3n2
+R9
+31
+R24
+R25
+R26
+R13
+R14
+nbody
+!s100 L:RKi[OScfao?=FAC7=hZ0
+!i10b 1

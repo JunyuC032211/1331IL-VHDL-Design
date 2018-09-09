@@ -1,0 +1,25 @@
+C:/Users/mifan/OneDrive/Dokument/GitHub/1331IL-VHDL-Design/Lab0/MUX.vhd {1 {vcom -work work -2002 -explicit {C:\Users\mifan\OneDrive\Dokument\GitHub\1331IL-VHDL-Design\Lab0\MUX.vhd}
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Compiling entity mux
+-- Compiling architecture rtl of mux
+
+} {} {}} C:/Users/mifan/OneDrive/Dokument/GitHub/1331IL-VHDL-Design/Lab0/TB_NAND_Gate.vhd {1 {vcom -work work -2002 -explicit C:/Users/mifan/OneDrive/Dokument/GitHub/1331IL-VHDL-Design/Lab0/TB_NAND_Gate.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Compiling entity test
+-- Compiling architecture testNand of test
+
+} {} {}} C:/Users/mifan/OneDrive/Dokument/GitHub/1331IL-VHDL-Design/Lab0/TB_MUX.vhd {1 {vcom -work work -2002 -explicit {C:\Users\mifan\OneDrive\Dokument\GitHub\1331IL-VHDL-Design\Lab0\TB_MUX.vhd}
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Compiling entity test
+-- Compiling architecture testMux of test
+
+} {} {}} C:/Users/mifan/OneDrive/Dokument/GitHub/1331IL-VHDL-Design/Lab0/NAND_Gate.vhd {1 {vcom -work work -2002 -explicit {C:\Users\mifan\OneDrive\Dokument\GitHub\1331IL-VHDL-Design\Lab0\NAND_Gate.vhd}
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Compiling entity nandgate
+-- Compiling architecture dataflow of nandgate
+
+} {} {}}

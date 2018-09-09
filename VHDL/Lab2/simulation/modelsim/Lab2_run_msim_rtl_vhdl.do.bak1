@@ -1,0 +1,10 @@
+transcript on
+if {[file exists rtl_work]} {
+	vdel -lib rtl_work -all
+}
+vlib rtl_work
+vmap work rtl_work
+
+vcom -93 -work work {C:/Users/Slim/Documents/VHDL/Lab2/CPU_Package.vhd}
+vcom -93 -work work {C:/Users/Slim/Documents/VHDL/Lab2/ALU.vhd}
+

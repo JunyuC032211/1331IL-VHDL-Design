@@ -1,0 +1,449 @@
+Analysis & Synthesis report for shet
+Wed Oct 18 13:01:34 2017
+Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. User-Specified and Inferred Latches
+  9. General Register Statistics
+ 10. Elapsed Time Per Partition
+ 11. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++---------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                    ;
++------------------------------------+--------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Wed Oct 18 13:01:34 2017      ;
+; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
+; Revision Name                      ; shet                                       ;
+; Top-level Entity Name              ; Counter                                    ;
+; Family                             ; Cyclone IV E                               ;
+; Total logic elements               ; 176                                        ;
+;     Total combinational functions  ; 176                                        ;
+;     Dedicated logic registers      ; 0                                          ;
+; Total registers                    ; 0                                          ;
+; Total pins                         ; 41                                         ;
+; Total virtual pins                 ; 0                                          ;
+; Total memory bits                  ; 0                                          ;
+; Embedded Multiplier 9-bit elements ; 0                                          ;
+; Total PLLs                         ; 0                                          ;
++------------------------------------+--------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                        ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                     ; Setting            ; Default Value      ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                     ; EP4CE115F29C7      ;                    ;
+; Top-level entity name                                                      ; Counter            ; shet               ;
+; Family name                                                                ; Cyclone IV E       ; Cyclone IV GX      ;
+; Use smart compilation                                                      ; Off                ; Off                ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                                ; Off                ; Off                ;
+; Restructure Multiplexers                                                   ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                                        ; Off                ; Off                ;
+; Preserve fewer node names                                                  ; On                 ; On                 ;
+; Disable OpenCore Plus hardware evaluation                                  ; Off                ; Off                ;
+; Verilog Version                                                            ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                               ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                   ; Auto               ; Auto               ;
+; Safe State Machine                                                         ; Off                ; Off                ;
+; Extract Verilog State Machines                                             ; On                 ; On                 ;
+; Extract VHDL State Machines                                                ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                          ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                 ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                             ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                    ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                  ; On                 ; On                 ;
+; Parallel Synthesis                                                         ; On                 ; On                 ;
+; DSP Block Balancing                                                        ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                         ; On                 ; On                 ;
+; Power-Up Don't Care                                                        ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                               ; Off                ; Off                ;
+; Remove Duplicate Registers                                                 ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                       ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                     ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                      ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                  ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                       ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                        ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                             ; Off                ; Off                ;
+; Optimization Technique                                                     ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                         ; 70                 ; 70                 ;
+; Auto Carry Chains                                                          ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                       ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                      ; Off                ; Off                ;
+; Auto ROM Replacement                                                       ; On                 ; On                 ;
+; Auto RAM Replacement                                                       ; On                 ; On                 ;
+; Auto DSP Block Replacement                                                 ; On                 ; On                 ;
+; Auto Shift Register Replacement                                            ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                            ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                              ; On                 ; On                 ;
+; Strict RAM Replacement                                                     ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                          ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                     ; Off                ; Off                ;
+; Auto RAM Block Balancing                                                   ; On                 ; On                 ;
+; Auto RAM to Logic Cell Conversion                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                      ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                              ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                        ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                          ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                    ; On                 ; On                 ;
+; Report Parameter Settings                                                  ; On                 ; On                 ;
+; Report Source Assignments                                                  ; On                 ; On                 ;
+; Report Connectivity Checks                                                 ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                         ; Off                ; Off                ;
+; Synchronization Register Chain Length                                      ; 2                  ; 2                  ;
+; PowerPlay Power Optimization                                               ; Normal compilation ; Normal compilation ;
+; HDL message level                                                          ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                            ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                   ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                         ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                  ; 100                ; 100                ;
+; Clock MUX Protection                                                       ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                ; Off                ; Off                ;
+; Block Design Naming                                                        ; Auto               ; Auto               ;
+; SDC constraint protection                                                  ; Off                ; Off                ;
+; Synthesis Effort                                                           ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal               ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                       ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                         ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                     ; On                 ; On                 ;
+; Synthesis Seed                                                             ; 1                  ; 1                  ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 4      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                ;
++----------------------------------+-----------------+-----------------+------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                         ; Library ;
++----------------------------------+-----------------+-----------------+------------------------------------------------------+---------+
+; ../Ny mapp/CPU_Package.vhd       ; yes             ; User VHDL File  ; C:/Users/Slim/Documents/VHDL/Ny mapp/CPU_Package.vhd ;         ;
+; ../Ny mapp/Counter.vhd           ; yes             ; User VHDL File  ; C:/Users/Slim/Documents/VHDL/Ny mapp/Counter.vhd     ;         ;
++----------------------------------+-----------------+-----------------+------------------------------------------------------+---------+
+
+
++-----------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary               ;
++---------------------------------------------+-------------+
+; Resource                                    ; Usage       ;
++---------------------------------------------+-------------+
+; Estimated Total logic elements              ; 176         ;
+;                                             ;             ;
+; Total combinational functions               ; 176         ;
+; Logic element usage by number of LUT inputs ;             ;
+;     -- 4 input functions                    ; 59          ;
+;     -- 3 input functions                    ; 80          ;
+;     -- <=2 input functions                  ; 37          ;
+;                                             ;             ;
+; Logic elements by mode                      ;             ;
+;     -- normal mode                          ; 145         ;
+;     -- arithmetic mode                      ; 31          ;
+;                                             ;             ;
+; Total registers                             ; 0           ;
+;     -- Dedicated logic registers            ; 0           ;
+;     -- I/O registers                        ; 0           ;
+;                                             ;             ;
+; I/O pins                                    ; 41          ;
+; Embedded Multiplier 9-bit elements          ; 0           ;
+; Maximum fan-out node                        ; process_0~0 ;
+; Maximum fan-out                             ; 72          ;
+; Total fan-out                               ; 636         ;
+; Average fan-out                             ; 2.40        ;
++---------------------------------------------+-------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                         ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
+; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Library Name ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
+; |Counter                   ; 176 (176)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 41   ; 0            ; |Counter            ; work         ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++----------------------------------------------------------------------------------------------------+
+; User-Specified and Inferred Latches                                                                ;
++-----------------------------------------------------+---------------------+------------------------+
+; Latch Name                                          ; Latch Enable Signal ; Free of Timing Hazards ;
++-----------------------------------------------------+---------------------+------------------------+
+; counts[0]$latch                                     ; process_0           ; yes                    ;
+; counts[1]$latch                                     ; process_0           ; yes                    ;
+; counts[2]$latch                                     ; process_0           ; yes                    ;
+; counts[3]$latch                                     ; process_0           ; yes                    ;
+; counts[4]$latch                                     ; process_0           ; yes                    ;
+; counts[5]$latch                                     ; process_0           ; yes                    ;
+; counts[6]$latch                                     ; process_0           ; yes                    ;
+; counts[7]$latch                                     ; process_0           ; yes                    ;
+; counts[8]$latch                                     ; process_0           ; yes                    ;
+; counts[9]$latch                                     ; process_0           ; yes                    ;
+; counts[10]$latch                                    ; process_0           ; yes                    ;
+; counts[11]$latch                                    ; process_0           ; yes                    ;
+; counts[12]$latch                                    ; process_0           ; yes                    ;
+; counts[13]$latch                                    ; process_0           ; yes                    ;
+; counts[14]$latch                                    ; process_0           ; yes                    ;
+; counts[15]$latch                                    ; process_0           ; yes                    ;
+; counts[16]$latch                                    ; process_0           ; yes                    ;
+; counts[17]$latch                                    ; process_0           ; yes                    ;
+; counts[18]$latch                                    ; process_0           ; yes                    ;
+; counts[19]$latch                                    ; process_0           ; yes                    ;
+; counts[20]$latch                                    ; process_0           ; yes                    ;
+; counts[21]$latch                                    ; process_0           ; yes                    ;
+; counts[22]$latch                                    ; process_0           ; yes                    ;
+; counts[23]$latch                                    ; process_0           ; yes                    ;
+; counts[24]$latch                                    ; process_0           ; yes                    ;
+; counts[25]$latch                                    ; process_0           ; yes                    ;
+; counts[26]$latch                                    ; process_0           ; yes                    ;
+; counts[27]$latch                                    ; process_0           ; yes                    ;
+; counts[28]$latch                                    ; process_0           ; yes                    ;
+; counts[29]$latch                                    ; process_0           ; yes                    ;
+; counts[30]$latch                                    ; process_0           ; yes                    ;
+; counts[31]$latch                                    ; process_0           ; yes                    ;
+; count[0]                                            ; process_0           ; yes                    ;
+; prev_step                                           ; process_0           ; yes                    ;
+; count[1]                                            ; process_0           ; yes                    ;
+; count[2]                                            ; process_0           ; yes                    ;
+; count[3]                                            ; process_0           ; yes                    ;
+; count[4]                                            ; process_0           ; yes                    ;
+; count[5]                                            ; process_0           ; yes                    ;
+; count[6]                                            ; process_0           ; yes                    ;
+; count[7]                                            ; process_0           ; yes                    ;
+; count[8]                                            ; process_0           ; yes                    ;
+; count[9]                                            ; process_0           ; yes                    ;
+; count[10]                                           ; process_0           ; yes                    ;
+; count[11]                                           ; process_0           ; yes                    ;
+; count[12]                                           ; process_0           ; yes                    ;
+; count[13]                                           ; process_0           ; yes                    ;
+; count[14]                                           ; process_0           ; yes                    ;
+; count[15]                                           ; process_0           ; yes                    ;
+; count[16]                                           ; process_0           ; yes                    ;
+; count[17]                                           ; process_0           ; yes                    ;
+; count[18]                                           ; process_0           ; yes                    ;
+; count[19]                                           ; process_0           ; yes                    ;
+; count[20]                                           ; process_0           ; yes                    ;
+; count[21]                                           ; process_0           ; yes                    ;
+; count[22]                                           ; process_0           ; yes                    ;
+; count[23]                                           ; process_0           ; yes                    ;
+; count[24]                                           ; process_0           ; yes                    ;
+; count[25]                                           ; process_0           ; yes                    ;
+; count[26]                                           ; process_0           ; yes                    ;
+; count[27]                                           ; process_0           ; yes                    ;
+; count[28]                                           ; process_0           ; yes                    ;
+; count[29]                                           ; process_0           ; yes                    ;
+; count[30]                                           ; process_0           ; yes                    ;
+; count[31]                                           ; process_0           ; yes                    ;
+; hex[0]$latch                                        ; process_0           ; yes                    ;
+; hex[1]$latch                                        ; process_0           ; yes                    ;
+; hex[2]$latch                                        ; process_0           ; yes                    ;
+; hex[3]$latch                                        ; process_0           ; yes                    ;
+; hex[4]$latch                                        ; process_0           ; yes                    ;
+; hex[5]$latch                                        ; process_0           ; yes                    ;
+; hex[6]$latch                                        ; process_0           ; yes                    ;
+; Number of user-specified and inferred latches = 72  ;                     ;                        ;
++-----------------------------------------------------+---------------------+------------------------+
+Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 0     ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:00     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Analysis & Synthesis
+    Info: Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
+    Info: Processing started: Wed Oct 18 13:01:32 2017
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off shet -c shet
+Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (12021): Found 2 design units, including 0 entities, in source file /users/slim/documents/vhdl/ny mapp/cpu_package.vhd
+    Info (12022): Found design unit 1: CPU_Package
+    Info (12022): Found design unit 2: CPU_Package-body
+Info (12021): Found 2 design units, including 1 entities, in source file /users/slim/documents/vhdl/ny mapp/counter.vhd
+    Info (12022): Found design unit 1: counter-Behaviour
+    Info (12023): Found entity 1: Counter
+Info (12127): Elaborating entity "Counter" for the top level hierarchy
+Warning (10492): VHDL Process Statement warning at Counter.vhd(24): signal "step" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at Counter.vhd(24): signal "prev_step" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at Counter.vhd(25): signal "step" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at Counter.vhd(26): signal "count" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at Counter.vhd(27): signal "count" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at Counter.vhd(30): signal "count" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at Counter.vhd(32): signal "count" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10631): VHDL Process Statement warning at Counter.vhd(22): inferring latch(es) for signal or variable "prev_step", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at Counter.vhd(22): inferring latch(es) for signal or variable "count", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at Counter.vhd(22): inferring latch(es) for signal or variable "counts", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at Counter.vhd(22): inferring latch(es) for signal or variable "hex", which holds its previous value in one or more paths through the process
+Info (10041): Inferred latch for "hex[0]" at Counter.vhd(22)
+Info (10041): Inferred latch for "hex[1]" at Counter.vhd(22)
+Info (10041): Inferred latch for "hex[2]" at Counter.vhd(22)
+Info (10041): Inferred latch for "hex[3]" at Counter.vhd(22)
+Info (10041): Inferred latch for "hex[4]" at Counter.vhd(22)
+Info (10041): Inferred latch for "hex[5]" at Counter.vhd(22)
+Info (10041): Inferred latch for "hex[6]" at Counter.vhd(22)
+Info (10041): Inferred latch for "counts[0]" at Counter.vhd(22)
+Info (10041): Inferred latch for "counts[1]" at Counter.vhd(22)
+Info (10041): Inferred latch for "counts[2]" at Counter.vhd(22)
+Info (10041): Inferred latch for "counts[3]" at Counter.vhd(22)
+Info (10041): Inferred latch for "counts[4]" at Counter.vhd(22)
+Info (10041): Inferred latch for "counts[5]" at Counter.vhd(22)
+Info (10041): Inferred latch for "counts[6]" at Counter.vhd(22)
+Info (10041): Inferred latch for "counts[7]" at Counter.vhd(22)
+Info (10041): Inferred latch for "counts[8]" at Counter.vhd(22)
+Info (10041): Inferred latch for "counts[9]" at Counter.vhd(22)
+Info (10041): Inferred latch for "counts[10]" at Counter.vhd(22)
+Info (10041): Inferred latch for "counts[11]" at Counter.vhd(22)
+Info (10041): Inferred latch for "counts[12]" at Counter.vhd(22)
+Info (10041): Inferred latch for "counts[13]" at Counter.vhd(22)
+Info (10041): Inferred latch for "counts[14]" at Counter.vhd(22)
+Info (10041): Inferred latch for "counts[15]" at Counter.vhd(22)
+Info (10041): Inferred latch for "counts[16]" at Counter.vhd(22)
+Info (10041): Inferred latch for "counts[17]" at Counter.vhd(22)
+Info (10041): Inferred latch for "counts[18]" at Counter.vhd(22)
+Info (10041): Inferred latch for "counts[19]" at Counter.vhd(22)
+Info (10041): Inferred latch for "counts[20]" at Counter.vhd(22)
+Info (10041): Inferred latch for "counts[21]" at Counter.vhd(22)
+Info (10041): Inferred latch for "counts[22]" at Counter.vhd(22)
+Info (10041): Inferred latch for "counts[23]" at Counter.vhd(22)
+Info (10041): Inferred latch for "counts[24]" at Counter.vhd(22)
+Info (10041): Inferred latch for "counts[25]" at Counter.vhd(22)
+Info (10041): Inferred latch for "counts[26]" at Counter.vhd(22)
+Info (10041): Inferred latch for "counts[27]" at Counter.vhd(22)
+Info (10041): Inferred latch for "counts[28]" at Counter.vhd(22)
+Info (10041): Inferred latch for "counts[29]" at Counter.vhd(22)
+Info (10041): Inferred latch for "counts[30]" at Counter.vhd(22)
+Info (10041): Inferred latch for "counts[31]" at Counter.vhd(22)
+Info (10041): Inferred latch for "count[0]" at Counter.vhd(22)
+Info (10041): Inferred latch for "count[1]" at Counter.vhd(22)
+Info (10041): Inferred latch for "count[2]" at Counter.vhd(22)
+Info (10041): Inferred latch for "count[3]" at Counter.vhd(22)
+Info (10041): Inferred latch for "count[4]" at Counter.vhd(22)
+Info (10041): Inferred latch for "count[5]" at Counter.vhd(22)
+Info (10041): Inferred latch for "count[6]" at Counter.vhd(22)
+Info (10041): Inferred latch for "count[7]" at Counter.vhd(22)
+Info (10041): Inferred latch for "count[8]" at Counter.vhd(22)
+Info (10041): Inferred latch for "count[9]" at Counter.vhd(22)
+Info (10041): Inferred latch for "count[10]" at Counter.vhd(22)
+Info (10041): Inferred latch for "count[11]" at Counter.vhd(22)
+Info (10041): Inferred latch for "count[12]" at Counter.vhd(22)
+Info (10041): Inferred latch for "count[13]" at Counter.vhd(22)
+Info (10041): Inferred latch for "count[14]" at Counter.vhd(22)
+Info (10041): Inferred latch for "count[15]" at Counter.vhd(22)
+Info (10041): Inferred latch for "count[16]" at Counter.vhd(22)
+Info (10041): Inferred latch for "count[17]" at Counter.vhd(22)
+Info (10041): Inferred latch for "count[18]" at Counter.vhd(22)
+Info (10041): Inferred latch for "count[19]" at Counter.vhd(22)
+Info (10041): Inferred latch for "count[20]" at Counter.vhd(22)
+Info (10041): Inferred latch for "count[21]" at Counter.vhd(22)
+Info (10041): Inferred latch for "count[22]" at Counter.vhd(22)
+Info (10041): Inferred latch for "count[23]" at Counter.vhd(22)
+Info (10041): Inferred latch for "count[24]" at Counter.vhd(22)
+Info (10041): Inferred latch for "count[25]" at Counter.vhd(22)
+Info (10041): Inferred latch for "count[26]" at Counter.vhd(22)
+Info (10041): Inferred latch for "count[27]" at Counter.vhd(22)
+Info (10041): Inferred latch for "count[28]" at Counter.vhd(22)
+Info (10041): Inferred latch for "count[29]" at Counter.vhd(22)
+Info (10041): Inferred latch for "count[30]" at Counter.vhd(22)
+Info (10041): Inferred latch for "count[31]" at Counter.vhd(22)
+Info (10041): Inferred latch for "prev_step" at Counter.vhd(22)
+Warning (13034): The following nodes have both tri-state and non-tri-state drivers
+    Warning (13035): Inserted always-enabled tri-state buffer between "hex[0]" and its non-tri-state driver.
+    Warning (13035): Inserted always-enabled tri-state buffer between "hex[1]" and its non-tri-state driver.
+    Warning (13035): Inserted always-enabled tri-state buffer between "hex[2]" and its non-tri-state driver.
+    Warning (13035): Inserted always-enabled tri-state buffer between "hex[3]" and its non-tri-state driver.
+    Warning (13035): Inserted always-enabled tri-state buffer between "hex[4]" and its non-tri-state driver.
+    Warning (13035): Inserted always-enabled tri-state buffer between "hex[5]" and its non-tri-state driver.
+    Warning (13035): Inserted always-enabled tri-state buffer between "hex[6]" and its non-tri-state driver.
+Warning (13012): Latch prev_step has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal step
+Warning (13009): TRI or OPNDRN buffers permanently enabled
+    Warning (13010): Node "hex[0]~synth"
+    Warning (13010): Node "hex[1]~synth"
+    Warning (13010): Node "hex[2]~synth"
+    Warning (13010): Node "hex[3]~synth"
+    Warning (13010): Node "hex[4]~synth"
+    Warning (13010): Node "hex[5]~synth"
+    Warning (13010): Node "hex[6]~synth"
+Info (286030): Timing-Driven Synthesis is running
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Warning (21074): Design contains 1 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "clk"
+Info (21057): Implemented 217 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 2 input pins
+    Info (21059): Implemented 32 output pins
+    Info (21060): Implemented 7 bidirectional pins
+    Info (21061): Implemented 176 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 32 warnings
+    Info: Peak virtual memory: 535 megabytes
+    Info: Processing ended: Wed Oct 18 13:01:34 2017
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:02
+
+

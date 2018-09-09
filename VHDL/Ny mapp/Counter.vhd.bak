@@ -1,0 +1,47 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+use work.CPU_Package.all;
+
+
+entity Counter is
+	Port(
+		clk : in std_logic;
+		step : in std_logic;
+		counter : out integer
+	);
+end entity;
+
+architecture Behaviour of counter is
+signal prev_step : std_logic:='0';
+signal count : integer:=0;
+begin
+
+	process(clk)
+	begin
+		if (step /= prev_step) then
+			prev_step <= step;
+			count <= count + 1;
+			if (count >= 65535) then
+				count <= 0;
+			end if;
+			counter <= count;
+		end if;
+	end process;
+	
+	
+end architecture;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
